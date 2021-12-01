@@ -65,7 +65,7 @@
                 {
                  "name":"jitsiRoom",
                  "type":"string",
-                 "value":"testmap bonfire"
+                 "value":"shared testmap bonfire"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -83,7 +83,7 @@
                 {
                  "name":"jitsiRoom",
                  "type":"string",
-                 "value":"testmap bonfire"
+                 "value":"shared testmap bonfire2"
                 }],
          "type":"tilelayer",
          "visible":true,
