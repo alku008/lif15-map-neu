@@ -25,6 +25,11 @@
                  "name":"silent",
                  "type":"bool",
                  "value":true
+                }, 
+                {
+                 "name":"silentTrigger",
+                 "type":"string",
+                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -227,7 +232,29 @@
          "draworder":"topdown",
          "id":2,
          "name":"floorLayer",
-         "objects":[],
+         "objects":[
+                {
+                 "height":124.825337680484,
+                 "id":2,
+                 "name":"popupStart",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":180.717279925477,
+                 "x":614.811364694923,
+                 "y":350.256171401956
+                }, 
+                {
+                 "height":50.3027480204937,
+                 "id":3,
+                 "name":"popupSilent",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":46.5766185374942,
+                 "x":173.265020959478,
+                 "y":260.829063809967
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -247,9 +274,14 @@
          "y":0
         }],
  "nextlayerid":33,
- "nextobjectid":1,
+ "nextobjectid":4,
  "orientation":"orthogonal",
  "properties":[
+        {
+         "name":"mapLink",
+         "type":"string",
+         "value":"https:\/\/alku008.github.io\/lif15-map-neu\/"
+        }, 
         {
          "name":"mapName",
          "type":"string",

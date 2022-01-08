@@ -6,7 +6,7 @@ WA.onInit().then(() => {
 	
 
 	// Open the popup when we enter a given zone
-	helloWorldPopup = WA.room.onEnterLayer("silentzone").subscribe(() => {
+	helloWorldPopup = WA.room.onEnterLayer("silent").subscribe(() => {
 		WA.ui.openPopup("popupSilent", 'In der Silent-Zone!', [{
 			label: "schliessen",
 			className: "primary",
@@ -18,14 +18,14 @@ WA.onInit().then(() => {
 	});
 
 	// Close the popup when we leave the zone.
-	WA.room.onLeaveLayer("silentzone").subscribe(() => {
+	WA.room.onLeaveLayer("silent").subscribe(() => {
 		helloWorldPopup.close();
 	});
 	
 	// Open the popup when we enter a given zone
-	helloWorldPopup = WA.room.onEnterLayer("eingang").subscribe(() => {
+	helloWorldPopup = WA.room.onEnterLayer("start").subscribe(() => {
 		WA.controls.disablePlayerControls();
-		WA.ui.openPopup("popupEingang", 'Die lila Flächen sind Meeting Flächen! An den Bildschirmen warten ein paar Informationen auf dich!', [{
+		WA.ui.openPopup("popupStart", 'Die roten Flächen sind Meeting Flächen!', [{
 			label: "schliessen",
 			className: "primary",
 			callback: (popup) => {
@@ -37,7 +37,7 @@ WA.onInit().then(() => {
 	});
 
 	// Close the popup when we leave the zone.
-	WA.room.onLeaveLayer("eingang").subscribe(() => {
+	WA.room.onLeaveLayer("start").subscribe(() => {
 		helloWorldPopup.close();
 	});
 });
